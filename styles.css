@@ -88,7 +88,7 @@ a{
 
 #card img{
     width: 210px;
-    height: 220px;
+    height: 210px;
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -97,6 +97,8 @@ a{
     margin: 10px 0;
     text-align: center;
     color: hsl(218, 44%, 22%);
+    font-weight: 700;
+    line-height: 1.2rem;
 }
 
 #card p{
@@ -104,10 +106,13 @@ a{
     text-align: center;
     font-size: 12px;
     color: hsl(220, 15%, 55%);
+    line-height: 1rem;
 }
 
 .attribution { font-size: 11px; text-align: center; justify-content: flex-end; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
 
 
 
