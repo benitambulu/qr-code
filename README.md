@@ -35,13 +35,64 @@ Key Features:
 ![](./images/Qrcode-Desktop.png)
 
 
+
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/benitambulu/qr-code)
 - Live Site URL: [Add live site URL here](https://benitambulu.github.io/qr-code/)
 
 
+
+
+
 ## My process
+
+### Planning and Requirements Gathering
+1. **Identify the Need:** Recognized the need for a responsive QR code card component to be used in various web projects.
+2. **Research:** Reviewed existing QR code card designs and responsive web design principles.
+3. **Define Requirements:** 
+   - The card should be responsive and work on both mobile (375px) and desktop (1440px) screens.
+   - It should be visually appealing and easy to integrate.
+   - Ensure accessibility compliance (WCAG).
+4. **Create Wireframes:** Sketched out basic wireframes for the mobile and desktop versions.
+
+### Setup and Initial Development
+1. **Project Setup:**
+   - Created a new project directory.
+   - Set up a basic HTML file structure.
+2. **Add CSS Reset:**
+   - Included Eric Meyer’s CSS reset to ensure consistent styling across browsers.
+3. **Base HTML Structure:**
+   - Developed the initial HTML structure, including the container div and QR code image placeholder.
+
+### Styling and Responsiveness
+1. **Apply Global Styles:**
+   - Set global styles in the CSS, including font family, background color, and overall layout using Flexbox.
+2. **Style the Card:**
+   - Added CSS for the card, including dimensions, background color, box-shadow, and border-radius.
+   - Ensured the card content is centered both horizontally and vertically.
+3. **Responsive Design:**
+   - Used media queries to adjust the layout and styling for different screen sizes.
+   - Tested on multiple devices to ensure responsiveness.
+
+### Accessibility and Testing
+1. **Accessibility:**
+   - Ensured all text had sufficient color contrast.
+   - Added alt text for images.
+   - Verified the structure and flow of content for screen readers.
+2. **Testing:**
+   - Conducted tests on various devices and browsers to ensure consistent appearance and behavior.
+   - Used tools like Chrome DevTools to simulate different screen sizes.
+   - Fixed any bugs or styling issues that arose during testing.
+
+### Final Adjustments and Deployment
+1. **Final Adjustments:**
+   - Made minor tweaks to the layout and styling based on feedback and additional testing.
+   - Optimized images for faster loading times.
+2. **Deployment:**
+   - Deployed the project to a web server (e.g., GitHub Pages, Netlify, or another hosting service).
+   - Verified the live version of the site to ensure everything works as expected.
+
 
 
 
@@ -53,50 +104,82 @@ Key Features:
 - **Google Fonts:** For custom fonts (e.g., "Outfit").
 - **Responsive Design Principles:** Ensuring the component works well on a variety of screen sizes.
 
+
+
+
 ### What I learned
+I learned how to properly use the flexbox properties and tricks and it made my work really smooth and seamless.
+Below are my favorite code snippets:
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: hsl(212, 45%, 89%);
+    font-family: "Outfit", sans-serif;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+#card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 236px;
+    height: 360px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 375px) {
+    #card {
+        width: 300px;
+        height: auto;
+    }
+
+    #card h4 {
+        font-size: 1.5rem;
+    }
+
+    #card p {
+        font-size: 1rem;
+    }
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I found out about flex-direction and how it was able to help me align all the sections on my code well. I would love to practice more with it and other flex-box properties.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) 
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+## Overview:
+The Complete Guide to Flexbox by CSS-Tricks is an in-depth resource that covers all aspects of Flexbox layout, including flex container properties, flex item properties, and detailed examples.
+
+## How It Helped:
+Centering Elements: The guide provided clear instructions on how to use justify-content and align-items to center elements both horizontally and vertically within their container. This was particularly useful for aligning the card and its contents in the center of the page.
+Responsive Design: It helped in understanding how to create responsive layouts that adjust flexibly to different screen sizes, ensuring that the card remains centered and proportionate on both mobile and desktop views.
+Alignment and Spacing: The guide explained the use of properties like flex-direction, flex-wrap, and gap which were crucial in aligning the card’s internal elements such as images and text consistently.
+Flexbox Examples: Provided practical examples and use cases which made it easier to visualize and implement Flexbox for creating a modern, responsive design.
+
+
 
 ## Author
 
-- Website - [Benita Mbulu](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Benita Mbulu](https://benitambulu.github.io/myportfoliowebsite/)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/benitambulu)
+- Twitter - [@yourusername](https://x.com/benitambulu_)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
 
 
 
